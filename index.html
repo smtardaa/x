@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X | Gündem, Siyaset, Ekonomi ve Din Haberleri</title>
+  <meta name="description" content="X — Genel gündem, siyaset, ekonomi ve din haberleri.">
+  <link rel="icon" href="assets/X.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-bar">
+      <a href="#" class="logo" aria-label="X ana sayfa">
+        <img src="assets/X.png" alt="X" class="logo-img">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="#" class="is-active" aria-current="page">Ana sayfa</a></li>
+          <li><a href="#">Haberler</a></li>
+          <li><a href="#">Yazarlar</a></li>
+          <li><a href="#">Galeriler</a></li>
+          <li><a href="#">Makaleler</a></li>
+          <li><a href="#">Videolar</a></li>
+          <li><a href="#">İletişim</a></li>
+          <li><a href="#">Mesaj gönderin</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn search-toggle" aria-label="Aramayı aç" aria-expanded="false" aria-controls="search-panel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-btn" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.78L17.75 3zm-1.08 16.18h1.7L7.4 4.73H5.58l11.09 14.45z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46h1.55V4.46A20.6 20.6 0 0 0 14.3 4.3c-2.2 0-3.7 1.34-3.7 3.8v2.4H8.1v3h2.5V21h2.9z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.77-1.77C18.27 5 12 5 12 5s-6.27 0-7.83.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.77 1.77C5.73 19 12 19 12 19s6.27 0 7.83-.43a2.5 2.5 0 0 0 1.77-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="icon-btn menu-toggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="main-nav">
+          <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <form class="search-form" role="search" action="#" onsubmit="return false;">
+        <label for="search-input" class="visually-hidden">Sitede ara</label>
+        <input type="search" id="search-input" class="search-input" placeholder="Haberlerde ara…" autocomplete="off">
+        <button type="submit" class="search-submit">Ara</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ========== SLIDER ========== -->
+    <section class="slider" aria-roledescription="carousel" aria-label="Öne çıkan haberler">
+      <div class="slider-viewport">
+        <div class="slider-track">
+          <article class="slide" aria-roledescription="slide" aria-label="1 / 4">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1600&h=900&q=75" alt="Gazete sayfaları" draggable="false">
+            <div class="slide-caption">
+              <span class="tag">Genel Gündem</span>
+              <h2 class="slide-title"><a href="#">Örnek manşet: Gündemin öne çıkan başlıkları burada yer alacak</a></h2>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="slide" aria-label="2 / 4">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&h=900&q=75" alt="Meclis binası" draggable="false" loading="lazy">
+            <div class="slide-caption">
+              <span class="tag">Siyaset</span>
+              <h2 class="slide-title"><a href="#">Örnek manşet: Meclis gündemindeki düzenlemeler ele alındı</a></h2>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="slide" aria-label="3 / 4">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&h=900&q=75" alt="Borsa grafikleri" draggable="false" loading="lazy">
+            <div class="slide-caption">
+              <span class="tag">Ekonomi</span>
+              <h2 class="slide-title"><a href="#">Örnek manşet: Piyasalarda haftanın değerlendirmesi</a></h2>
+            </div>
+          </article>
+          <article class="slide" aria-roledescription="slide" aria-label="4 / 4">
+            <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1600&h=900&q=75" alt="Cami silueti" draggable="false" loading="lazy">
+            <div class="slide-caption">
+              <span class="tag">Din</span>
+              <h2 class="slide-title"><a href="#">Örnek manşet: Din ve toplum üzerine yeni bir söyleşi</a></h2>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button type="button" class="slider-arrow slider-prev" aria-label="Önceki haber">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="slider-arrow slider-next" aria-label="Sonraki haber">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </section>
+
+    <!-- ========== HABER KARTLARI ========== -->
+    <section class="news" aria-labelledby="news-heading">
+      <div class="section-head">
+        <h2 id="news-heading" class="section-title">Son Haberler</h2>
+        <span class="sample-note">Örnek içerik · sunum amaçlıdır</span>
+      </div>
+
+      <div class="news-grid">
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Genel Gündem</span>
+            <h3 class="card-title"><a href="#">Şehirlerde ulaşım düzenlemesine ilişkin örnek haber başlığı</a></h3>
+            <p class="card-summary">Bu alan, haberin kısa özetini göstermek için kullanılan örnek bir metindir. Gerçek içerik yayına alındığında burada yer alacaktır.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1555848962-6e79363ec58f?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Siyaset</span>
+            <h3 class="card-title"><a href="#">Yerel yönetimlerle ilgili yeni yasa teklifi: örnek siyaset haberi</a></h3>
+            <p class="card-summary">Siyaset kategorisi için hazırlanmış örnek özet. Haberin ana noktaları iki ya da üç cümleyle okuyucuya aktarılır.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Ekonomi</span>
+            <h3 class="card-title"><a href="#">Enflasyon beklentileri ve aile bütçesi: örnek ekonomi haberi</a></h3>
+            <p class="card-summary">Ekonomi kategorisini temsil eden örnek içerik. Rakamlar ve yorumlar gerçek haber girildiğinde güncellenecektir.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Din</span>
+            <h3 class="card-title"><a href="#">Tarihi camilerde restorasyon çalışmaları: örnek din haberi</a></h3>
+            <p class="card-summary">Din kategorisi için örnek özet metni. İnanç, kültür ve toplum başlıklarındaki haberler bu kartlarda listelenecektir.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Ekonomi</span>
+            <h3 class="card-title"><a href="#">Küçük işletmelere yönelik destek paketi: örnek ekonomi haberi</a></h3>
+            <p class="card-summary">Sunum amaçlı hazırlanmış örnek özet. Kart düzeninin farklı uzunluktaki metinlerle nasıl göründüğünü göstermek içindir.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="#" class="card-media" tabindex="-1" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=720&h=405&q=70" alt="" loading="lazy">
+          </a>
+          <div class="card-body">
+            <span class="tag tag--light">Genel Gündem</span>
+            <h3 class="card-title"><a href="#">Hafta sonu hava durumu ve trafik uyarıları: örnek gündem haberi</a></h3>
+            <p class="card-summary">Genel gündem kategorisi için örnek bir özet. Günün öne çıkan gelişmeleri kısa ve anlaşılır biçimde burada özetlenir.</p>
+            <a href="#" class="card-more">Daha fazlasını gör</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== HABERLER + BUGÜNÜN EN ÇOK OKUNANLARI ========== -->
+    <section class="split-section" aria-label="Haberler ve bugünün en çok okunanları">
+      <div class="section-head split-head-main">
+        <h2 class="section-title">Haberler</h2>
+      </div>
+      <div class="section-head split-head-side">
+        <h2 class="section-title" id="popular-heading">Bugünün En Çok Okunanları</h2>
+      </div>
+
+      <div class="mini-grid split-main">
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Seçim takviminde yeni düzenleme gündemde</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">İhracatta yılın ilk yarısına ait örnek veriler açıklandı</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Tarihi camiler hafta sonu binlerce ziyaretçiyi ağırladı</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">İstanbul'da kültür etkinlikleri yoğun ilgi gördü</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Hanelerin tasarruf eğilimleri araştırıldı</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Yerel yönetim teklifi komisyondan geçti</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Yaz Kur'an kursları için kayıt dönemi başladı</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">Okullarda yeni dönem hazırlıkları tamamlandı</h3>
+          </a>
+        </article>
+        <article class="mini-card">
+          <a href="#" class="mini-card-link">
+            <span class="mini-card-media"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=480&h=270&q=70" alt="" loading="lazy"></span>
+            <h3 class="mini-card-title">E-ticarette kargo hacmi büyümeye devam ediyor</h3>
+          </a>
+        </article>
+      </div>
+
+      <aside class="split-side" aria-labelledby="popular-heading">
+        <ol class="popular-list">
+          <li class="popular-item">
+            <h3 class="popular-title"><a href="#">Büyükşehirlerde toplu taşıma saatleri yeniden düzenlendi</a></h3>
+            <p class="popular-desc">Yeni tarifeyle sabah ve akşam saatlerinde sefer sayısı artırılıyor.</p>
+          </li>
+          <li class="popular-item">
+            <h3 class="popular-title"><a href="#">Meclis yeni yasama yılına hazırlanıyor</a></h3>
+            <p class="popular-desc">Genel Kurul'da ilk haftalarda görüşülecek başlıklar netleşmeye başladı.</p>
+          </li>
+          <li class="popular-item">
+            <h3 class="popular-title"><a href="#">Akaryakıt fiyatlarında haftalık değişim</a></h3>
+            <p class="popular-desc">Pompa fiyatlarına yansıyan güncellemenin ayrıntıları bu örnek haberde yer alıyor.</p>
+          </li>
+          <li class="popular-item">
+            <h3 class="popular-title"><a href="#">Cuma hutbesinde aile ve komşuluk vurgusu</a></h3>
+            <p class="popular-desc">Hutbede toplumsal dayanışmanın önemine dikkat çekildi.</p>
+          </li>
+          <li class="popular-item">
+            <h3 class="popular-title"><a href="#">Hafta sonu için kuvvetli yağış uyarısı</a></h3>
+            <p class="popular-desc">Tahminlere göre birçok ilde sağanak yağış bekleniyor.</p>
+          </li>
+        </ol>
+      </aside>
+    </section>
+
+    <!-- ========== VİDEO ========== -->
+    <!-- Video bağlantıları js/media-config.js dosyasından yönetilir -->
+    <section class="video-section" aria-labelledby="video-heading">
+      <div class="video-head">
+        <h2 class="section-title section-title--light" id="video-heading">Video</h2>
+      </div>
+      <div class="video-body">
+        <div class="video-main">
+          <div class="video-frame" id="featured-video"></div>
+          <div class="video-main-info">
+            <h3 class="video-main-title" id="featured-title"></h3>
+            <span class="video-channel" id="featured-channel"></span>
+          </div>
+        </div>
+        <ul class="video-list" id="video-list" aria-label="Diğer videolar"></ul>
+      </div>
+    </section>
+
+    <!-- ========== SHORTS ========== -->
+    <section class="shorts-section" aria-labelledby="shorts-heading">
+      <div class="shorts-intro">
+        <h2 class="shorts-title" id="shorts-heading">Kısaca Haberlerimiz</h2>
+        <p class="shorts-sub">Kısa video haberler</p>
+      </div>
+      <div class="shorts-content">
+        <ul class="shorts-row" id="shorts-row"></ul>
+        <a href="#" class="shorts-more" id="shorts-more" target="_blank" rel="noopener noreferrer">Daha fazlasını görün</a>
+      </div>
+    </section>
+
+    <!-- ========== MAKALELER ========== -->
+    <!-- Bağlantılar geçicidir (#); makale sayfaları hazır olunca href değerlerini güncelleyin -->
+    <section class="articles-section" aria-labelledby="articles-heading">
+      <div class="section-head articles-head">
+        <h2 class="section-title articles-title" id="articles-heading">MAKALELERİMİZ</h2>
+        <a href="#" class="articles-all">TÜM MAKALELERİMİZİ GÖRÜN</a>
+      </div>
+
+      <div class="article-list" data-accordion>
+        <div class="article-item">
+          <h3 class="article-heading">
+            <button type="button" class="article-trigger" id="article-trigger-1" aria-expanded="false" aria-controls="article-panel-1">
+              <span class="article-trigger-text">Büyükşehirlerde değişen yaşam alışkanlıkları üzerine bir değerlendirme</span>
+              <svg class="article-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h3>
+          <div class="article-panel" id="article-panel-1" role="region" aria-labelledby="article-trigger-1">
+            <div class="article-panel-inner">
+              <div class="article-panel-body">
+                <p class="article-summary">Uzaktan çalışma, artan ulaşım süreleri ve konut maliyetleri şehir hayatının ritmini değiştiriyor. Bu örnek makalede, değişimin aile ve mahalle ilişkilerine yansımaları ele alınıyor.</p>
+                <a href="#" class="article-more">Daha fazlasını görün</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <h3 class="article-heading">
+            <button type="button" class="article-trigger" id="article-trigger-2" aria-expanded="false" aria-controls="article-panel-2">
+              <span class="article-trigger-text">Yerel yönetimlerde katılımcı demokrasinin imkânları</span>
+              <svg class="article-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h3>
+          <div class="article-panel" id="article-panel-2" role="region" aria-labelledby="article-trigger-2">
+            <div class="article-panel-inner">
+              <div class="article-panel-body">
+                <p class="article-summary">Kent konseyleri, mahalle toplantıları ve dijital katılım araçları vatandaşın karar süreçlerine etkisini artırabilir mi? Örnek makale, farklı şehirlerden uygulamaları karşılaştırıyor.</p>
+                <a href="#" class="article-more">Daha fazlasını görün</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <h3 class="article-heading">
+            <button type="button" class="article-trigger" id="article-trigger-3" aria-expanded="false" aria-controls="article-panel-3">
+              <span class="article-trigger-text">Enflasyon döneminde hane bütçesini korumanın yolları</span>
+              <svg class="article-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h3>
+          <div class="article-panel" id="article-panel-3" role="region" aria-labelledby="article-trigger-3">
+            <div class="article-panel-inner">
+              <div class="article-panel-body">
+                <p class="article-summary">Fiyat artışlarının hızlandığı dönemlerde harcama önceliklerini belirlemek ve birikimi korumak önem kazanıyor. Bu örnek yazı, aile bütçesi için temel önerileri özetliyor.</p>
+                <a href="#" class="article-more">Daha fazlasını görün</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <h3 class="article-heading">
+            <button type="button" class="article-trigger" id="article-trigger-4" aria-expanded="false" aria-controls="article-panel-4">
+              <span class="article-trigger-text">Ramazan ayının toplumsal dayanışmaya katkısı</span>
+              <svg class="article-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h3>
+          <div class="article-panel" id="article-panel-4" role="region" aria-labelledby="article-trigger-4">
+            <div class="article-panel-inner">
+              <div class="article-panel-body">
+                <p class="article-summary">İftar sofraları, zekât ve sadaka gelenekleri komşuluk ve yardımlaşma bağlarını güçlendiriyor. Örnek makale, bu geleneklerin günümüz şehir hayatındaki yerini inceliyor.</p>
+                <a href="#" class="article-more">Daha fazlasını görün</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-item">
+          <h3 class="article-heading">
+            <button type="button" class="article-trigger" id="article-trigger-5" aria-expanded="false" aria-controls="article-panel-5">
+              <span class="article-trigger-text">Afet bilinci: Deprem hazırlığında bireysel sorumluluk</span>
+              <svg class="article-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h3>
+          <div class="article-panel" id="article-panel-5" role="region" aria-labelledby="article-trigger-5">
+            <div class="article-panel-inner">
+              <div class="article-panel-body">
+                <p class="article-summary">Afet çantası, aile buluşma planı ve bina güvenliği kontrolleri hayat kurtarabilir. Bu örnek yazı, depreme hazırlıkta herkesin atabileceği basit adımları sıralıyor.</p>
+                <a href="#" class="article-more">Daha fazlasını görün</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BİLGİLENDİRME ========== -->
+    <p class="site-notice">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.1" fill="currentColor"/></svg>
+      <span>Bu site hâlâ yapım aşamasındadır. Sitede yer alan içerik ve görseller internet üzerinden yalnızca örnek ve tasarım amaçlı alınmıştır.</span>
+    </p>
+
+  </main>
+
+  <!-- Shorts video penceresi -->
+  <dialog class="video-modal" id="shorts-modal" aria-label="Kısa video">
+    <div class="video-modal-inner">
+      <button type="button" class="video-modal-close" aria-label="Videoyu kapat">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="video-modal-frame"></div>
+    </div>
+  </dialog>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo" aria-label="X ana sayfa">
+          <img src="assets/X.png" alt="" class="logo-img">
+          <span class="footer-name" data-site-name>X</span>
+        </a>
+        <p class="footer-desc">Genel gündem, siyaset, ekonomi ve din alanlarında güncel ve tarafsız haberler.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Alt menü">
+        <ul>
+          <li><a href="#">Ana sayfa</a></li>
+          <li><a href="#">Haberler</a></li>
+          <li><a href="#">Yazarlar</a></li>
+          <li><a href="#">Makaleler</a></li>
+          <li><a href="#">Videolar</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> <span data-site-name>X</span>. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="js/media-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
